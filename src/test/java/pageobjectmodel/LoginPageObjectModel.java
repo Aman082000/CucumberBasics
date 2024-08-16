@@ -1,9 +1,9 @@
-package pages;
+package pageobjectmodel;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage {
+public class LoginPageObjectModel {
 
     WebDriver webDriver;
 
@@ -13,7 +13,7 @@ public class LoginPage {
     By signOutMenu = By.className("oxd-userdropdown-tab");
     By logout = By.cssSelector("//a[normalize-space()='Logout']");
 
-    public LoginPage(WebDriver webDriver){
+    public LoginPageObjectModel(WebDriver webDriver){
         this.webDriver = webDriver;
     }
 

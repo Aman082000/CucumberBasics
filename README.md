@@ -58,7 +58,7 @@ CucumberBasics
 │   │   ├── java
 │   │   │   └── com
 │   │   │       └── example
-│   │   │           └── pages
+│   │   │           └── pageobjectmodel
 │   │   │               └── LoginPage.java
 │   │   └── resources
 │   └── test
@@ -77,7 +77,7 @@ CucumberBasics
 └── README.md
 
 
-- pages: Contains the Page Object Model (POM) classes.
+- pageobjectmodel: Contains the Page Object Model (POM) classes.
 - runners: Contains the test runner class for executing Cucumber tests.
 - stepdefinitions: Contains the step definition classes where the test steps are implemented.
 - features: Contains the Cucumber feature files.

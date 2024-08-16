@@ -1,6 +1,6 @@
 package stepdefinitions;
 
-import pages.LoginPage;
+import pageobjectmodel.LoginPageObjectModel;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 public class LoginDemoSteps_POM {
 
     WebDriver webDriver = new ChromeDriver();
-    LoginPage loginPage = new LoginPage(webDriver);
+    LoginPageObjectModel loginPage = new LoginPageObjectModel(webDriver);
 
     @Given("Browser is open")
     public void browser_is_open() {

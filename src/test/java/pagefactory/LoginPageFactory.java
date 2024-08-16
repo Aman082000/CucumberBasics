@@ -1,11 +1,11 @@
-package packagefactory;
+package pagefactory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage_PF {
+public class LoginPageFactory {
 
     /*
     Page Factory :
@@ -32,7 +32,7 @@ public class LoginPage_PF {
     @FindBy(css = "//a[normalize-space()='Logout']")
     WebElement logout;
 
-    public LoginPage_PF(WebDriver webDriver){
+    public LoginPageFactory(WebDriver webDriver){
         this.webDriver = webDriver;
         PageFactory.initElements(webDriver, this);
     }

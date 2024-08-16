@@ -6,13 +6,13 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import packagefactory.LoginPage_PF;
+import pagefactory.LoginPageFactory;
 import java.util.concurrent.TimeUnit;
 
 public class LoginDemoSteps_PageFactory {
 
     WebDriver webDriver = new ChromeDriver();
-    LoginPage_PF loginPage = new LoginPage_PF(webDriver);
+    LoginPageFactory loginPage = new LoginPageFactory(webDriver);
 
     @Given("Browser is open")
     public void browser_is_open() {
