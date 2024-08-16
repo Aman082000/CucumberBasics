@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class LoginDemoSteps_POM {
+public class LoginDemoSteps_PageObjectModel {
 
     WebDriver webDriver = new ChromeDriver();
     LoginPageObjectModel loginPage = new LoginPageObjectModel(webDriver);
