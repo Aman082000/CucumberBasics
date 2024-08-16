@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,8 +12,14 @@ import java.util.concurrent.TimeUnit;
 
 public class LoginDemoSteps_PageFactory {
 
-    WebDriver webDriver = new ChromeDriver();
-    LoginPageFactory loginPage = new LoginPageFactory(webDriver);
+    WebDriver webDriver;
+    LoginPageFactory loginPage;
+
+    @Before
+    public void beforeScenario(){
+        webDriver = new ChromeDriver();
+        loginPage = new LoginPageFactory(webDriver);
+    }
 
     @Given("Browser is open")
     public void browser_is_open() {
